@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Pridi:400,700&display=swap');
+
 html,
 body {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Pridi", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.9rem;
 }
 
@@ -18,9 +20,11 @@ body {
   }
 }
 
+
 .page-title {
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 2px;
+  font-family: 'Pridi', serif;
 }
 
 /* File Input */
@@ -200,3 +204,4 @@ input[type="color"],
 .errorsContainer .alert {
   pointer-events: all;
 }
+

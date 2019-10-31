@@ -22,10 +22,10 @@
   let selectedImage = null;
 
   const defaultOptions = {
-    text: '',
+    text: 'ทิ้ง E-Waste กับ AIS',
     fillColor: '#ffffff',
     shadowColor: '#000000',
-    font: 'Impact',
+    font: 'Pridi',
     fontSize: 40,
     textAlign: 'center',
     shadowBlur: 3,
@@ -89,7 +89,7 @@
 
   function generateMeme() {
     const downloadLink = canvas.toDataURL('image/png').replace('image/png', 'image/octet-stream');
-    downloadMemeBtn.download = 'meme.png';
+    downloadMemeBtn.download = 'ais_ewaste_text.png';
     downloadMemeBtn.href = downloadLink;
     downloadMemePreview.src = downloadLink;
     toggleModal(downloadModal, true);
@@ -187,9 +187,9 @@
       <div class="p-2 d-none" data-section="settings">
         <div class="form-row">
           <div class="col-lg-6 mb-3">
-            <label class="mb-1">Font: </label>
+            <label class="mb-1">ฟอนต์: </label>
             <select class="custom-select" data-input="font">
-              <option value="Impact">Impact</option>
+              <option value="Pridi">Pridi</option>
               <option value="Arial">Arial</option>
               <option value="Helvetica">Helvetica</option>
               <option value="Comic Sans MS">Comic Sans MS</option>
@@ -203,10 +203,11 @@
               <option value="Bookman">Bookman</option>
               <option value="Trebuchet MS">Trebuchet MS</option>
               <option value="Arial Black">Arial Black</option>
+              <option value="Pridi">Pridi</option>
             </select>
           </div>
           <div class="col-lg-6 mb-3">
-            <label class="mb-1">Font size:</label>
+            <label class="mb-1">ขนาดตัวอักษร:</label>
             <input class="form-control" type="number" min="1" max="100" value="${options[index].fontSize}" data-input="fontSize">
           </div>
         </div>
